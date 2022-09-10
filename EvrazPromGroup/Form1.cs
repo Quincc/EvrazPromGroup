@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,17 @@ namespace EvrazPromGroup
         }
         private bool Cheack_User(string login, string password)
         {
+            using (StreamReader reader = new StreamReader("Users"))
+            {
+                string text = reader.ReadToEnd();
+                for (int i = 0; i < text.Length; i++)
+                {
+                    if (text. == $"{login} {password}")
+                    {
+
+                    }
+                }    
+            }
             return false;
         }
     }
