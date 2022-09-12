@@ -28,22 +28,43 @@ namespace EvrazPromGroup
             {
                 FormGeneral form = new FormGeneral();
                 form.ShowDialog();
+                
             }
         }
         private bool Cheack_User(string login, string password)
         {
-            using (StreamReader reader = new StreamReader("Users"))
+            using (StreamReader reader = new StreamReader("Users.txt"))
             {
-                string text = reader.ReadToEnd();
+                string us = reader.ReadToEnd();
+                string[] text = us.Split(new string[] {"\r\n", "\r", "\n"}, StringSplitOptions.None);
                 for (int i = 0; i < text.Length; i++)
                 {
-                    if (text. == $"{login} {password}")
+                    if (text[i] == $"{login} {password}")
                     {
-
+                        return true;
                     }
                 }    
             }
             return false;
+        }
+
+        private void textBox_Login_Click(object sender, EventArgs e)
+        {
+            textBox_Login.Text = "";
+        }
+
+        private void textBoxPassword_Click(object sender, EventArgs e)
+        {
+            textBoxPassword.Text = "";
+        }
+
+        private void Authorization_Form_Click(object sender, EventArgs e)
+        {
+            if (textBox_Login.Text == "" || textBoxPassword.Text == "")
+            {
+                textBox_Login.Text = "Login";
+                textBoxPassword.Text = "***";
+            }
         }
     }
 }

@@ -36,26 +36,30 @@ namespace EvrazPromGroup
             // 
             // textBox_Login
             // 
-            this.textBox_Login.Location = new System.Drawing.Point(348, 130);
+            this.textBox_Login.Location = new System.Drawing.Point(324, 144);
+            this.textBox_Login.Multiline = true;
             this.textBox_Login.Name = "textBox_Login";
-            this.textBox_Login.Size = new System.Drawing.Size(100, 20);
+            this.textBox_Login.Size = new System.Drawing.Size(140, 31);
             this.textBox_Login.TabIndex = 0;
             this.textBox_Login.Text = "Login";
+            this.textBox_Login.Click += new System.EventHandler(this.textBox_Login_Click);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Location = new System.Drawing.Point(348, 175);
+            this.textBoxPassword.Location = new System.Drawing.Point(324, 181);
+            this.textBoxPassword.Multiline = true;
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(100, 20);
+            this.textBoxPassword.Size = new System.Drawing.Size(140, 27);
             this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.Text = "***";
+            this.textBoxPassword.Click += new System.EventHandler(this.textBoxPassword_Click);
             // 
             // buttonAccept
             // 
-            this.buttonAccept.Location = new System.Drawing.Point(348, 220);
+            this.buttonAccept.Location = new System.Drawing.Point(324, 214);
             this.buttonAccept.Name = "buttonAccept";
-            this.buttonAccept.Size = new System.Drawing.Size(100, 23);
+            this.buttonAccept.Size = new System.Drawing.Size(140, 29);
             this.buttonAccept.TabIndex = 2;
             this.buttonAccept.Text = "Enter";
             this.buttonAccept.UseVisualStyleBackColor = true;
@@ -65,7 +69,7 @@ namespace EvrazPromGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 450);
+            this.ClientSize = new System.Drawing.Size(802, 451);
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBox_Login);
@@ -73,6 +77,7 @@ namespace EvrazPromGroup
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authorization";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.Authorization_Form_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
