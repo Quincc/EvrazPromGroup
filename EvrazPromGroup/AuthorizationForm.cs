@@ -24,11 +24,19 @@ namespace EvrazPromGroup
         }
         private void buttonAccept_Click(object sender, EventArgs e)
         {
-            if(Cheack_User(textBox_Login.Text, textBoxPassword.Text))
+            //if(Cheack_User(textBox_Login.Text, textBoxPassword.Text))
+            //{
+            //    this.Hide();
+            //    FormPrimary form = new FormPrimary();
+            //    form.Closed += (s, args) => this.Close();
+            //    form.ShowDialog();
+            //}
+            if(Cheack_User1(textBox_Login.Text, textBoxPassword.Text) != null)
             {
-                FormGeneral form = new FormGeneral();
+                this.Hide();
+                FormPrimary form = new FormPrimary(Cheack_User1(textBox_Login.Text, textBoxPassword.Text));
+                form.Closed += (s, args) => this.Close();
                 form.ShowDialog();
-                
             }
         }
         private bool Cheack_User(string login, string password)
@@ -47,24 +55,37 @@ namespace EvrazPromGroup
             }
             return false;
         }
-
+        private Employee Cheack_User1(string login, string password)
+        {
+            if (Repository.FindEmployee(login, password) != null)
+                return Repository.FindEmployee(login, password);
+            return null;
+        }
         private void textBox_Login_Click(object sender, EventArgs e)
         {
-            textBox_Login.Text = "";
+            if (textBox_Login.Text == "Login")
+                textBox_Login.Text = "";
+            
         }
 
         private void textBoxPassword_Click(object sender, EventArgs e)
         {
-            textBoxPassword.Text = "";
+            if (textBoxPassword.Text == "***")
+                textBoxPassword.Text = "";
         }
 
         private void Authorization_Form_Click(object sender, EventArgs e)
         {
-            if (textBox_Login.Text == "" || textBoxPassword.Text == "")
+            if (textBox_Login.Text == "" && textBoxPassword.Text == "")
             {
                 textBox_Login.Text = "Login";
                 textBoxPassword.Text = "***";
             }
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

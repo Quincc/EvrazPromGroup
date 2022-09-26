@@ -1,7 +1,7 @@
 ﻿
 namespace EvrazPromGroup
 {
-    partial class FormGeneral
+    partial class OrdersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,7 +43,6 @@ namespace EvrazPromGroup
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -52,8 +51,7 @@ namespace EvrazPromGroup
             // menuStrip2
             // 
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.menuToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(696, 24);
@@ -72,6 +70,7 @@ namespace EvrazPromGroup
             // 
             // toolStripMenuItemNew
             // 
+            this.toolStripMenuItemNew.Image = global::EvrazPromGroup.Properties.Resources.create_new;
             this.toolStripMenuItemNew.Name = "toolStripMenuItemNew";
             this.toolStripMenuItemNew.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemNew.Text = "New";
@@ -79,6 +78,7 @@ namespace EvrazPromGroup
             // 
             // toolStripMenuItemEdit
             // 
+            this.toolStripMenuItemEdit.Image = global::EvrazPromGroup.Properties.Resources.Edit_icon__the_Noun_Project_30184__svg;
             this.toolStripMenuItemEdit.Name = "toolStripMenuItemEdit";
             this.toolStripMenuItemEdit.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemEdit.Text = "Edit";
@@ -86,6 +86,7 @@ namespace EvrazPromGroup
             // 
             // toolStripMenuItemDelete
             // 
+            this.toolStripMenuItemDelete.Image = global::EvrazPromGroup.Properties.Resources._9739889771543238875_512;
             this.toolStripMenuItemDelete.Name = "toolStripMenuItemDelete";
             this.toolStripMenuItemDelete.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItemDelete.Text = "Delete";
@@ -160,12 +161,6 @@ namespace EvrazPromGroup
             // 
             this.bindingSource1.DataSource = typeof(EvrazPromGroup.Product);
             // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(52, 20);
-            this.toolStripMenuItem1.Text = "About";
-            // 
             // FormGeneral
             // 
             this.ClientSize = new System.Drawing.Size(696, 401);
@@ -208,6 +203,7 @@ namespace EvrazPromGroup
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemNew;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemEdit;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDelete;
+        private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.DataGridView dataGridViewUsers;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -215,7 +211,5 @@ namespace EvrazPromGroup
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

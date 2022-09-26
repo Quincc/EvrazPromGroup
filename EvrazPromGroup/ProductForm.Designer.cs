@@ -50,7 +50,7 @@
             this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonOk.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonOk.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.buttonOk.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonOk.Location = new System.Drawing.Point(123, 210);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(105, 38);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace EvrazPromGroup
 {
-    public partial class FormGeneral : Form
+    public partial class OrdersForm : Form
     {
-        public FormGeneral()
+        public OrdersForm()
         {
             InitializeComponent();
         }
@@ -54,7 +54,6 @@ namespace EvrazPromGroup
         {
             if(dataGridViewUsers.SelectedRows.Count == 1)
             {
-                var res = dataGridViewUsers.SelectedRows[0].DataBoundItem;
                 Product product = (Product)dataGridViewUsers.SelectedRows[0].DataBoundItem;
                 ProductForm form = new ProductForm(product);
                 if (form.ShowDialog() == DialogResult.OK)
