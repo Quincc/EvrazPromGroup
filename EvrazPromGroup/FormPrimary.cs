@@ -55,10 +55,5 @@ namespace EvrazPromGroup
             OpenChildForm(new EmployeesForm(), sender);
             labelChildForm.Text = "Employees";
         }
-
-        private void FormPrimary_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

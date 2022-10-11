@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeesForm));
             this.dataGridViewEmployees = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +60,7 @@
             this.dataGridViewEmployees.AllowUserToDeleteRows = false;
             this.dataGridViewEmployees.AutoGenerateColumns = false;
             this.dataGridViewEmployees.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewEmployees.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridViewEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewEmployees.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
@@ -78,7 +80,6 @@
             this.dataGridViewEmployees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewEmployees.Size = new System.Drawing.Size(945, 424);
             this.dataGridViewEmployees.TabIndex = 0;
-            this.dataGridViewEmployees.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployees_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -175,7 +176,7 @@
             // 
             // toolStripMenuItemNew
             // 
-            this.toolStripMenuItemNew.Image = global::EvrazPromGroup.Properties.Resources.create_new;
+            this.toolStripMenuItemNew.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemNew.Image")));
             this.toolStripMenuItemNew.Name = "toolStripMenuItemNew";
             this.toolStripMenuItemNew.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemNew.Text = "New";
@@ -183,7 +184,7 @@
             // 
             // toolStripMenuItemEdit
             // 
-            this.toolStripMenuItemEdit.Image = global::EvrazPromGroup.Properties.Resources.Edit_icon__the_Noun_Project_30184__svg;
+            this.toolStripMenuItemEdit.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemEdit.Image")));
             this.toolStripMenuItemEdit.Name = "toolStripMenuItemEdit";
             this.toolStripMenuItemEdit.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemEdit.Text = "Edit";
@@ -191,7 +192,7 @@
             // 
             // toolStripMenuItemDelete
             // 
-            this.toolStripMenuItemDelete.Image = global::EvrazPromGroup.Properties.Resources._9739889771543238875_512;
+            this.toolStripMenuItemDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemDelete.Image")));
             this.toolStripMenuItemDelete.Name = "toolStripMenuItemDelete";
             this.toolStripMenuItemDelete.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemDelete.Text = "Delete";

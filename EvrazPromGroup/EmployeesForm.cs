@@ -87,10 +87,5 @@ namespace EvrazPromGroup
                 }
             }
         }
-
-        private void dataGridViewEmployees_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
     }
 }

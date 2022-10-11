@@ -104,6 +104,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Repository.cs" />
     <Compile Include="Status.cs" />
     <EmbeddedResource Include="About.resx">
@@ -129,14 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="EvrazUsersDataSet.xsc">
       <DependentUpon>EvrazUsersDataSet.xsd</DependentUpon>
     </None>
@@ -174,22 +174,13 @@
     <None Include="p11.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Icons8-Ios7-Finance-Purchase-Order.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\output-onlinepngtools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\output-onlinepngtools %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\9739889771543238875-512.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\create-new.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Edit_icon_%28the_Noun_Project_30184%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Profile.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

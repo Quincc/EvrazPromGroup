@@ -82,10 +82,5 @@ namespace EvrazPromGroup
                 textBoxPassword.Text = "***";
             }
         }
-
-        private void textBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -33,11 +33,11 @@
             this.buttonaEmployees = new System.Windows.Forms.Button();
             this.buttonAbout = new System.Windows.Forms.Button();
             this.buttonOrders = new System.Windows.Forms.Button();
-            this.buttonProfile = new System.Windows.Forms.Button();
-            this.panelTitle = new System.Windows.Forms.Panel();
             this.panel = new System.Windows.Forms.Panel();
             this.labelChildForm = new System.Windows.Forms.Label();
             this.panelDesk = new System.Windows.Forms.Panel();
+            this.buttonProfile = new System.Windows.Forms.Button();
+            this.panelTitle = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panel.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +60,9 @@
             // 
             this.buttonaEmployees.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonaEmployees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonaEmployees.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonaEmployees.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonaEmployees.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonaEmployees.Image = global::EvrazPromGroup.Properties.Resources.Icons8_Ios7_Finance_Purchase_Order;
+            this.buttonaEmployees.Image = ((System.Drawing.Image)(resources.GetObject("buttonaEmployees.Image")));
             this.buttonaEmployees.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonaEmployees.Location = new System.Drawing.Point(0, 182);
             this.buttonaEmployees.Name = "buttonaEmployees";
@@ -79,17 +79,15 @@
             this.buttonAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonAbout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAbout.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAbout.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAbout.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonAbout.Image = global::EvrazPromGroup.Properties.Resources.output_onlinepngtools;
+            this.buttonAbout.Image = ((System.Drawing.Image)(resources.GetObject("buttonAbout.Image")));
             this.buttonAbout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonAbout.Location = new System.Drawing.Point(0, 422);
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(186, 54);
             this.buttonAbout.TabIndex = 4;
             this.buttonAbout.Text = "About";
-            this.buttonAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.buttonAbout_Click);
             // 
@@ -97,9 +95,9 @@
             // 
             this.buttonOrders.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOrders.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrders.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOrders.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonOrders.Image = global::EvrazPromGroup.Properties.Resources.Icons8_Ios7_Finance_Purchase_Order;
+            this.buttonOrders.Image = ((System.Drawing.Image)(resources.GetObject("buttonOrders.Image")));
             this.buttonOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonOrders.Location = new System.Drawing.Point(0, 127);
             this.buttonOrders.Name = "buttonOrders";
@@ -110,35 +108,6 @@
             this.buttonOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonOrders.UseVisualStyleBackColor = true;
             this.buttonOrders.Click += new System.EventHandler(this.buttonOrders_Click);
-            // 
-            // buttonProfile
-            // 
-            this.buttonProfile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProfile.Font = new System.Drawing.Font("Dubai", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProfile.ForeColor = System.Drawing.Color.Gainsboro;
-            this.buttonProfile.Image = global::EvrazPromGroup.Properties.Resources.output_onlinepngtools__3_;
-            this.buttonProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProfile.Location = new System.Drawing.Point(0, 72);
-            this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(186, 55);
-            this.buttonProfile.TabIndex = 1;
-            this.buttonProfile.Text = "Profile";
-            this.buttonProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonProfile.UseVisualStyleBackColor = true;
-            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
-            // 
-            // panelTitle
-            // 
-            this.panelTitle.BackColor = System.Drawing.Color.SlateGray;
-            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
-            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(186, 72);
-            this.panelTitle.TabIndex = 0;
             // 
             // panel
             // 
@@ -165,13 +134,41 @@
             // 
             // panelDesk
             // 
-            this.panelDesk.BackColor = System.Drawing.Color.Silver;
+            this.panelDesk.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panelDesk.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesk.Location = new System.Drawing.Point(186, 72);
             this.panelDesk.MinimumSize = new System.Drawing.Size(614, 378);
             this.panelDesk.Name = "panelDesk";
             this.panelDesk.Size = new System.Drawing.Size(633, 404);
             this.panelDesk.TabIndex = 2;
+            // 
+            // buttonProfile
+            // 
+            this.buttonProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProfile.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProfile.ForeColor = System.Drawing.Color.Gainsboro;
+            this.buttonProfile.Image = ((System.Drawing.Image)(resources.GetObject("buttonProfile.Image")));
+            this.buttonProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProfile.Location = new System.Drawing.Point(0, 72);
+            this.buttonProfile.Name = "buttonProfile";
+            this.buttonProfile.Size = new System.Drawing.Size(186, 55);
+            this.buttonProfile.TabIndex = 1;
+            this.buttonProfile.Text = "Profile";
+            this.buttonProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
+            // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.SlateGray;
+            this.panelTitle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTitle.BackgroundImage")));
+            this.panelTitle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(186, 72);
+            this.panelTitle.TabIndex = 0;
             // 
             // FormPrimary
             // 
@@ -184,7 +181,6 @@
             this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "FormPrimary";
             this.Text = "FormPrimary";
-            this.Load += new System.EventHandler(this.FormPrimary_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();

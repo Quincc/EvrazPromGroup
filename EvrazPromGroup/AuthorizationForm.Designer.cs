@@ -29,6 +29,7 @@ namespace EvrazPromGroup
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization_Form));
             this.textBox_Login = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonAccept = new System.Windows.Forms.Button();
@@ -38,7 +39,7 @@ namespace EvrazPromGroup
             // 
             // textBox_Login
             // 
-            this.textBox_Login.BackColor = System.Drawing.Color.MidnightBlue;
+            this.textBox_Login.BackColor = System.Drawing.Color.SlateGray;
             this.textBox_Login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox_Login.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_Login.ForeColor = System.Drawing.SystemColors.Menu;
@@ -53,7 +54,7 @@ namespace EvrazPromGroup
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.BackColor = System.Drawing.Color.MidnightBlue;
+            this.textBoxPassword.BackColor = System.Drawing.Color.SlateGray;
             this.textBoxPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxPassword.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.ForeColor = System.Drawing.SystemColors.Menu;
@@ -65,11 +66,10 @@ namespace EvrazPromGroup
             this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.Text = "***";
             this.textBoxPassword.Click += new System.EventHandler(this.textBoxPassword_Click);
-            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // buttonAccept
             // 
-            this.buttonAccept.BackColor = System.Drawing.Color.SteelBlue;
+            this.buttonAccept.BackColor = System.Drawing.Color.DimGray;
             this.buttonAccept.Font = new System.Drawing.Font("Dubai", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAccept.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonAccept.Location = new System.Drawing.Point(30, 240);
@@ -82,7 +82,7 @@ namespace EvrazPromGroup
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::EvrazPromGroup.Properties.Resources.p1;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(30, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 60);
@@ -95,7 +95,7 @@ namespace EvrazPromGroup
             this.AcceptButton = this.buttonAccept;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(265, 303);
             this.Controls.Add(this.buttonAccept);
             this.Controls.Add(this.pictureBox1);

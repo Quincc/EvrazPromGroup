@@ -30,6 +30,7 @@ namespace EvrazPromGroup
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdersForm));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemNew = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,25 +71,25 @@ namespace EvrazPromGroup
             // 
             // toolStripMenuItemNew
             // 
-            this.toolStripMenuItemNew.Image = global::EvrazPromGroup.Properties.Resources.create_new;
+            this.toolStripMenuItemNew.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemNew.Image")));
             this.toolStripMenuItemNew.Name = "toolStripMenuItemNew";
-            this.toolStripMenuItemNew.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemNew.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemNew.Text = "New";
             this.toolStripMenuItemNew.Click += new System.EventHandler(this.toolStripMenuItemNew_Click);
             // 
             // toolStripMenuItemEdit
             // 
-            this.toolStripMenuItemEdit.Image = global::EvrazPromGroup.Properties.Resources.Edit_icon__the_Noun_Project_30184__svg;
+            this.toolStripMenuItemEdit.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemEdit.Image")));
             this.toolStripMenuItemEdit.Name = "toolStripMenuItemEdit";
-            this.toolStripMenuItemEdit.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemEdit.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemEdit.Text = "Edit";
             this.toolStripMenuItemEdit.Click += new System.EventHandler(this.toolStripMenuItemEdit_Click);
             // 
             // toolStripMenuItemDelete
             // 
-            this.toolStripMenuItemDelete.Image = global::EvrazPromGroup.Properties.Resources._9739889771543238875_512;
+            this.toolStripMenuItemDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemDelete.Image")));
             this.toolStripMenuItemDelete.Name = "toolStripMenuItemDelete";
-            this.toolStripMenuItemDelete.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItemDelete.Size = new System.Drawing.Size(107, 22);
             this.toolStripMenuItemDelete.Text = "Delete";
             this.toolStripMenuItemDelete.Click += new System.EventHandler(this.toolStripMenuItemDelete_Click);
             // 
@@ -98,6 +99,7 @@ namespace EvrazPromGroup
             this.dataGridViewUsers.AllowUserToDeleteRows = false;
             this.dataGridViewUsers.AutoGenerateColumns = false;
             this.dataGridViewUsers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUsers.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridViewUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -161,13 +163,13 @@ namespace EvrazPromGroup
             // 
             this.bindingSource1.DataSource = typeof(EvrazPromGroup.Product);
             // 
-            // FormGeneral
+            // OrdersForm
             // 
             this.ClientSize = new System.Drawing.Size(696, 401);
             this.Controls.Add(this.dataGridViewUsers);
             this.Controls.Add(this.menuStrip2);
             this.MainMenuStrip = this.menuStrip2;
-            this.Name = "FormGeneral";
+            this.Name = "OrdersForm";
             this.Load += new System.EventHandler(this.FormGeneral_Load_1);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();

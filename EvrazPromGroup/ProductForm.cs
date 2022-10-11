@@ -48,9 +48,5 @@ namespace EvrazPromGroup
 
             DialogResult = DialogResult.OK;
         }
-
-        private void ProductForm_Load(object sender, EventArgs e)
-        {
-        }
     }
 }
